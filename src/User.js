@@ -1,7 +1,6 @@
 function User()
 {
-    return
-    (
+    return(
         <h1>User Component</h1>
     );
 }
