@@ -1,7 +1,10 @@
 function User()
 {
     return(
-        <h1>User Component</h1>
+        <div>
+            <h1>User Component</h1>
+        </div>
+        
     );
 }
 export default User;
