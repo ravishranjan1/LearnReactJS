@@ -1,19 +1,19 @@
-import User from './User'
-function Ravish() {
+import {useState} from 'react';
+import User from './User';
+import './Ravish.css';  //connect with css file
 
+function Ravish() {
+  const [data,setData] = useState("Ravish")
   function Apple(){
-    return(
-      <div>
-        <h6>Apple Component</h6>
-      </div>
-    );
+    setData("Ranjan");
+    alert("Hello");
   }
 
   return (
     <div className="Ravish">
-      <h1>Hello Ravish !</h1>
-       <User />
-       <Apple />
+      {/* <h1>Hello Ravish !</h1> */}
+      <h1>{data}</h1>
+      <button onClick={Apple}>Update Data</button>
     </div>
   );
 }
