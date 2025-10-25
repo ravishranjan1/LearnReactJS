@@ -1,14 +1,13 @@
-import Login,{Profile,Setting,UserKey} from './UseComponents'
-
 function App(){
+  const name = "Ravish Ranjan";
+  let a =10;
+  let b = 50;
   return(
-    <div>
-      <h1>Importing Exporting Components</h1>
-      <Login />
-      <Setting/>
-      <Profile />
-      <h1>{UserKey}</h1>
-    </div>
+    <>
+      <h1>{name}</h1>
+      <h1>{a+b+30}</h1>
+      <button onClick={()=>alert("Hello")}>Click Me</button>
+    </>
   )
 }
 
