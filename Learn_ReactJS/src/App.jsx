@@ -1,17 +1,17 @@
-import './App.css'
+import { useState } from "react";
+import Count from "./state"
+
 function App(){
-  function callFun(){
-    alert("Function called");
-  }
-  const fruit = (name)=>{
-    alert(name);
+  const [fruit, setFruit]=useState("Apple");
+  const update = ()=>{
+    setFruit("Banana")
   }
   return(
     <>
-      <h1>Event And Function Call</h1>
-      <button onClick={callFun}>click me</button>
-      <button onClick={()=>fruit("Apple")}>Apple</button>
-      <button onClick={()=>{fruit("Banana")}}>Banana</button>
+      <h1>State in ReactJS</h1>
+      <h1>{fruit}</h1>
+      <button onClick={update}>Change Fruit Name</button>
+      <Count />
     </>
   )
 }
