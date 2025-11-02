@@ -1,6 +1,6 @@
 import { useState } from "react";
 //Toggle
-// function User(){
+// function user(){
 //     const [display, setDisplay] = useState(true);
 //     return (
 //         <>
@@ -13,7 +13,7 @@ import { useState } from "react";
 //         </>
 //     )
 // }
-// export default User;
+// export default user;
 
 
 //Multiple Condition
