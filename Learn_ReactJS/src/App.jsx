@@ -1,12 +1,17 @@
 
-import Props from "./Props"
+
+import Wrapper from "./Wrapper"
 
 function App(){
   
   return(
     <>
       <h1>Props in ReactJS</h1>
-      <Props name={"Ravish Ranjan"} age ={21} email = {"ravi@ram.com"}/>
+      <Wrapper/>
+      <Wrapper color="orange"><h1>Hello</h1></Wrapper>
+      <Wrapper><h1>Hello</h1>
+        <h2 style={{color:"red"}}>hey</h2>
+      </Wrapper>
     </>
   )
 }
