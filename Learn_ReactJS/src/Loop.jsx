@@ -1,5 +1,6 @@
+import User from "./ReuseComp"
 function Loop(){
-    const userName=[
+    const userData=[
         {
             name : "Ravish",
             age : 23,
@@ -25,32 +26,46 @@ function Loop(){
             id : 4
         }
     ]
+    // return(
+    //     <div>
+    //         <h2>with Map Function</h2>
+
+    //         <table border={1}>
+    //             <thead>
+    //                 <tr>
+    //                     <td>Id</td>
+    //                     <td>Name</td>
+    //                     <td>Email</td>
+    //                     <td>Age</td>
+    //                 </tr>
+    //             </thead>
+    //             <tbody>
+    //                 {
+    //                     userName.map((user)=>(
+    //                         <tr key={user.id}>
+    //                             <td>{user.id}</td>
+    //                             <td>{user.name}</td>
+    //                             <td>{user.mail}</td>
+    //                             <td>{user.age}</td>
+    //                         </tr>
+    //                     ))
+    //                 }
+    //             </tbody>
+    //         </table>
+    //     </div>
+    // )
+
+
     return(
         <div>
-            <h2>with Map Function</h2>
-
-            <table border={1}>
-                <thead>
-                    <tr>
-                        <td>Id</td>
-                        <td>Name</td>
-                        <td>Email</td>
-                        <td>Age</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        userName.map((user)=>(
-                            <tr>
-                                <td>{user.id}</td>
-                                <td>{user.name}</td>
-                                <td>{user.mail}</td>
-                                <td>{user.age}</td>
-                            </tr>
-                        ))
-                    }
-                </tbody>
-            </table>
+            <h1>Reuse Component</h1>
+            {
+                userData.map((user)=>(
+                    <div key={user.id}>
+                        <User data={user} />
+                    </div>
+                ))
+            }
         </div>
     )
 }
