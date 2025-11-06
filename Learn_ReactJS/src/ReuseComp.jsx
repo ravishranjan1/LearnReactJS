@@ -1,4 +1,4 @@
-function User({data}){
+const User = ({data})=>{
     return(
         <div style = {
             {
