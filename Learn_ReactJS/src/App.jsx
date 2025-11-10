@@ -1,9 +1,9 @@
-import Inline from "./InlineStyle"
+import External from "./ExternalStyle"
 function App() {
   
   return (
     <>
-      <Inline />
+      <External />
     </>
   )
 

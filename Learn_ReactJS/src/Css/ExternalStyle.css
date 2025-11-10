@@ -1,0 +1,17 @@
+.heading{
+    color :green
+}
+.container{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+}
+.imgStyle{
+    height: 200px;
+    width: 200px;
+    
+}
+.textStyle{
+    text-align: center;
+    text-shadow: 2px 2px 2px  grey;
+}
