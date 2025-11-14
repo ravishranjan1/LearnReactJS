@@ -1,9 +1,10 @@
-import External from "./ExternalStyle"
+import StyleComp from './StyledComponent'
 function App() {
   
   return (
     <>
-      <External />
+    
+      <StyleComp />
     </>
   )
 
