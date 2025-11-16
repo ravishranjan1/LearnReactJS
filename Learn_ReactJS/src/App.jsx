@@ -1,10 +1,10 @@
-import StyleComp from './StyledComponent'
+import Boot from './Bootstrap'
 function App() {
   
   return (
     <>
     
-      <StyleComp />
+      <Boot />
     </>
   )
 
